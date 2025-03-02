@@ -17,12 +17,13 @@
 빈 줄은 주어지지 않는다
 각 줄은 공백으로 시작하지 않고, 공백으로 끝나지 않는다
 
-종료 조건이 저번에 error 그건가.. 음 잘 모르것는데...
+종료 조건이 저번에 try except EOFerror 그건가.. 음 잘 모르것는데...
 '''
 
 while True:
-    try:
+    try:                    # 참 일 동안 실행한다
         sentence = input()
         print(sentence)
-    except:
+
+    except EOFError:        # 입력이 끝나면 프로그램 종료(자동 종료)
         break
