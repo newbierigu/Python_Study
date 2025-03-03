@@ -25,7 +25,14 @@ for alpabet in word:
         a_count[alpabet] = 1                # 처음 등장하는 문자면 1로 초기화
 
 max_count = max(a_count.values())           # 최댓값 찾기
-most_used = [key for key, value in a_count.items() if value == max_count]
+
+most_used = [key for key, value in a_count.items() if value == max_count]  # 가장 많이 등장한 알파벳(= max_count)을 가진 모든 키를 리스트에 저장
+'''위 코드 컴프리헨션 풀어쓰면 이렇게 됨됨
+most_used = []
+for key, value in alpha_count.items():
+    if value == max_count:
+        most_used.append(key)
+'''
 
 if len(most_used) > 1:
     print("?")                  # 최댓값을 가진 문자가 여러 개면 ?
