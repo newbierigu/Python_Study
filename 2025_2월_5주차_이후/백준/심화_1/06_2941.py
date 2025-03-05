@@ -38,48 +38,16 @@
 len으로 글자 수를 세면 정답 결과가 나옴
 '''
 # 방법 1 (replace 활용)
-'''
+
 word = input()
 
 word = word.replace('dz=', '*')
 
 croatia_1 = ['c=', 'c-', 'd-', 'lj', 'nj', 's=', 'z=']
+
 for s in croatia_1:
     word = word.replace(s, '*')
 
 print(len(word))
-'''
-
-# 방법 2 (슬라이싱 활용)
-
-croatia_a = 0
-word = list(input())
-
-del_list = []
-
-for i in range(len(word) - 3):
-    if ''.join(word[i : i + 3]) == 'dz=':
-        croatia_a += 1
-        del_list.append(i)
-
-if del_list:
-    for item in del_list.reverse():
-        del word[item : item + 3]
-
-del_list = []
-
-for i in range(len(word) - 2):
-    if ''.join(word[i : i + 2]) in {'c=', 'c-', 'd-', 'lj', 'nj', 's=', 'z='}:
-        croatia_a += 1
-        del_list.append(i)
-        
-        
-if del_list:
-    print(del_list)
-    for item in del_list.reverse():
-        del word[item : item + 2]
-
-print(len(word) + croatia_a)
-
 
 

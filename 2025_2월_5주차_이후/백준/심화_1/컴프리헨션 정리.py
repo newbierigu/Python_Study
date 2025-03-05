@@ -1,6 +1,8 @@
+# 컴프리헨션 정리
 # 0 ~ 10 에서 짝수만
 list = range(0, 11)
 list = [x for x in list if x % 2 == 0]
+
 # 첫 번째 x는 x를 list에 넣어라 라는 뜻
 # x.replace() or x + y 사용해도 된다.
 
