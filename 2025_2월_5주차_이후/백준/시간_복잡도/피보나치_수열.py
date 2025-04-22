@@ -1,7 +1,7 @@
 # 피보나치 수열 공부
 
 '''
-def Fibonacci_Sequence(n):
+def fibonacci_sequence(n):
     i = 1
     j = 0
     for _ in range(n):
@@ -12,7 +12,7 @@ def Fibonacci_Sequence(n):
             print(i)
 
 
-Fibonacci_Sequence(51)
+fibonacci_sequence(51)
 '''
 
 previous = 0
