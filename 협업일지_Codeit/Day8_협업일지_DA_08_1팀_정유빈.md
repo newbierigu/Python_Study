@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/b0b84204-92a0-4ef3-8e5e-81835fcd3e82)# Day - 8 협업 일지
+# Day - 8 협업 일지
 
 일자: 2025-05-26 / 정유빈
 
