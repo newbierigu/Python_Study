@@ -268,7 +268,8 @@ GROUP BY school_id;
 ## event_user_nearbyschooldensity_info (유저별 학교 밀집도 뷰)
 
 - 데이터 규모 : 230,784건
-- 데이터 목적 : 이벤트 기간 유저(user_properties)에 학교 밀집도(density) 정보를 연결하여 지역적 특성 반영
+- 데이터 목적 : 이벤트 기간 유저(`user_properties`)에 학교 밀집도(`density`) 정보를 연결하여 지역적 특성 반영
+- 이벤트 기간 로그 유저만 사용한 이유 : `user_properties` 테이블에만 유일하게 `user_id`와 `school_id`가 연결되있고 데이터 수도 적당히 존재함
 - NULL 존재 여부 : 없음
 - 생성 기반 뷰/테이블 :`user_properties`, `school_density_info`
 
@@ -440,6 +441,7 @@ WHERE sdi.density IS NOT NULL;        -- 밀집도 정보가 있는 경우만 �
 
 - 테이블을 분석하며, 유저들의 모집단을 어떻게 구성을 해야할지에 대한 아이디어를 팀원들과 회의를하며, 발굴해야할 것 같다.
 - 오늘 역시 진행된 테이블 수가 몇 개 존재하지 않아서, 분석 속도가 붙지 않음.. 테이블 분석 요령을 좀 더 필요할 것 같다.
+
 
 
 
